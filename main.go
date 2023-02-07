@@ -29,6 +29,7 @@ func main() {
 		return c.SendStatus(404) // => 404 "Not Found"
 	})
 
+	// ------- Add comment ------
 	authCtx := context.Background()
 	authPort := "8081"
 	authRouter := auth.SetupServer(authCtx, "http://localhost:"+authPort)
